@@ -1,0 +1,52 @@
+# dependencies (bun install)
+node_modules
+
+# output
+out
+dist
+.astro
+.wrangler
+*.tgz
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+.env.local
+.dev.vars*
+!.dev.vars.example
+!.env.example
+
+# caches
+.eslintcache
+.cache
+.turbo
+.tanstack
+*.tsbuildinfo
+
+# local reference projects
+apps/astro-monorepo/
+apps/astro-shadcn-cross-ui-non-monorepo/
+apps/astro-test-cf/
+
+# IntelliJ based IDEs
+.idea
+.vercel
+
+# Finder (MacOS) folder config
+.DS_Store
+
+# temp dev files
+temp
+.commandcode/

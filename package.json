@@ -1,0 +1,42 @@
+{
+  "name": "saas-boilerplate",
+  "description": "A Cloudflare-first SaaS starter with TanStack Start, Better Auth, Drizzle, and shared shadcn UI.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "bun@1.3.14",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/entange-labs/saas-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/entange-labs/saas-boilerplate/issues"
+  },
+  "homepage": "https://github.com/entange-labs/saas-boilerplate#readme",
+  "keywords": [
+    "bun",
+    "cloudflare",
+    "drizzle",
+    "saas",
+    "shadcn",
+    "tanstack-start"
+  ],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:app": "turbo dev --filter=@saas-boilerplate/app",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "check": "biome check .",
+    "format": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.0",
+    "@types/bun": "^1.3.14",
+    "turbo": "^2.9.18",
+    "typescript": "^6.0.3"
+  }
+}

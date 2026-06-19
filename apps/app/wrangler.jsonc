@@ -1,0 +1,44 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "saas-boilerplate-app",
+	"compatibility_date": "2026-06-15",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"main": "src/server.ts",
+	"workers_dev": true,
+	"observability": {
+		"logs": {
+			"enabled": true,
+			"invocation_logs": true
+		},
+		"traces": {
+			"enabled": true
+		}
+	},
+	"env": {
+		"local": {
+			"hyperdrive": [
+				{
+					"binding": "HYPERDRIVE",
+					"id": "replace-with-local-or-dev-hyperdrive-id",
+					"localConnectionString": "postgresql://localhost:5432/saas_boilerplate"
+				}
+			],
+			"vars": {
+				"SENTRY_ENVIRONMENT": "local"
+			}
+		},
+		"production": {
+			"hyperdrive": [
+				{
+					"binding": "HYPERDRIVE",
+					"id": "replace-with-production-hyperdrive-id"
+				}
+			],
+			"vars": {
+				"SENTRY_ENVIRONMENT": "production"
+			}
+		}
+	}
+}

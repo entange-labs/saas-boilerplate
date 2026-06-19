@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-vega",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "../../packages/ui/src/styles/globals.css",
+    "baseColor": "zinc",
+    "cssVariables": true
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@/components",
+    "hooks": "@saas-boilerplate/ui/hooks",
+    "lib": "@saas-boilerplate/ui/lib",
+    "utils": "@saas-boilerplate/ui/lib/utils",
+    "ui": "@saas-boilerplate/ui/components"
+  },
+  "rtl": false,
+  "menuColor": "default",
+  "menuAccent": "bold",
+  "registries": {}
+}
