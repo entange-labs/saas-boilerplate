@@ -2,6 +2,9 @@
 
 A Bun/Turbo starter for a Cloudflare-first SaaS app.
 
+Use this repository as a template when you want the application foundation
+already wired and product-specific features left empty.
+
 ## Stack
 
 - Bun workspaces with Turbo task orchestration
@@ -13,6 +16,10 @@ A Bun/Turbo starter for a Cloudflare-first SaaS app.
 - Optional PostHog analytics and Sentry error monitoring
 
 ## Setup
+
+See [docs/setup.md](docs/setup.md) for the full first-run checklist.
+
+Quick start:
 
 1. Install dependencies:
 
@@ -31,8 +38,8 @@ A Bun/Turbo starter for a Cloudflare-first SaaS app.
 
 4. Replace the placeholder Hyperdrive IDs in `apps/app/wrangler.jsonc`.
 
-5. Ask the project owner to run the needed database scripts from `apps/app`
-   after the database is ready:
+5. Ask the project owner to run the needed database scripts from `apps/app` after
+   the database is ready:
 
    ```bash
    bun run db:generate
@@ -63,6 +70,14 @@ bun run --cwd apps/app test
 - `apps/app` contains the TanStack Start application.
 - `packages/ui` contains the shared UI primitives and theme CSS.
 - `docs/memory` keeps durable conventions for future agents.
+
+## Docs
+
+- [Architecture](docs/architecture.md)
+- [Setup](docs/setup.md)
+- [Deployment](docs/deployment.md)
+- [Template usage](docs/template-usage.md)
+- [Future work](docs/future/00-readme.md)
 
 ## License
 
